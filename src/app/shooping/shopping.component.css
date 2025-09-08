@@ -1,0 +1,56 @@
+.deptos {
+  width: 500px;
+}
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  gap: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+.first:hover {
+  transform: translateY(50px);
+}
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  gap: 40px;
+}
+.three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  gap: 40px;
+}
+.four {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  gap: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+.four:hover {
+  transform: translateY(-50px);
+}
+.text {
+  text-align: center;
+  max-width: 600px;
+}
+h1 {
+  font-size: 50px;
+  color: red;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+}

@@ -1,0 +1,88 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: blue;
+  gap: 450px;
+  padding: 80px;
+}
+.primero,
+.segundo {
+  padding: 40px;
+  display: flex;
+  gap: 450px;
+}
+
+.nosotros {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+.nosotros:hover {
+  transform: scale(1.95);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+.nosotros1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+.nosotros1:hover {
+  transform: scale(1.95);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+.nosotros2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+.nosotros2:hover {
+  transform: scale(1.95);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+.nosotros3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+.nosotros3:hover {
+  transform: scale(1.95);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+.text {
+  width: 100%;
+  height: 0px;
+  p {
+    position: relative;
+    z-index: 1;
+    left: 760px;
+    bottom: 800px;
+    background-color: rgb(255, 249, 249);
+    width: 400px;
+    padding: 40px;
+    cursor: pointer;
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+  }
+  p:hover{
+    transform: scale(1.95);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  }
+}

@@ -1,0 +1,36 @@
+<app-nav></app-nav>
+<div class="contain">
+<div class="login-container">
+  <h2>Login</h2>
+  <input type="text" placeholder="Usuario" />
+  <input type="password" placeholder="Contraseña" />
+  <button>Ingresar</button>
+
+  <p>
+    ¿No tienes cuenta?
+    <a (click)="openModal()">Crear cuenta</a>
+  </p>
+</div>
+</div>
+<div class="modal-overlay" *ngIf="showModal">
+  <div class="modal">
+    <button class="close-btn" (click)="closeModal()">X</button>
+
+    <h2>Crear cuenta ☕</h2>
+
+    <label>Nombre de usuario</label>
+    <input type="text" placeholder="Tu nombre de usuario" /> 
+
+    <label>Correo electrónico</label>
+    <input type="email" placeholder="ejemplo@correo.com" />
+
+    <label>Contraseña</label>
+    <input type="password" placeholder="********" />
+
+    <label>Confirmar contraseña</label>
+    <input type="password" placeholder="********" />
+
+    <button class="register-btn">Registrarme</button>
+  </div>
+</div>
+<app-footer></app-footer>
