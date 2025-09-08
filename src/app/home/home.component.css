@@ -27,7 +27,7 @@
 }
 
 .content2 {
-  background-image: url("assets/images/segundo.jpg");
+  background-image: url("/assets/images/segundo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
