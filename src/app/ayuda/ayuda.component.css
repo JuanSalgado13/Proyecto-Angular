@@ -86,3 +86,14 @@
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
   }
 }
+.precio-cafe {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.precio-cafe h2 {
+  color: #2e7d32;
+}
+

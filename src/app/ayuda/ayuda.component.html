@@ -27,5 +27,17 @@
     de Colombia.
   </p>
 </div>
+<div class="precio-cafe">
+  <h2>Precio del Café en Tiempo Real</h2>
+  <p *ngIf="precioCafe; else cargando">
+    💰 Precio actual: <strong>{{ precioCafe }} USD</strong>
+    <br>
+    ⏰ Última actualización: {{ ultimaActualizacion }}
+  </p>
+  <ng-template #cargando>
+    <p>Cargando precio del café...</p>
+  </ng-template>
+</div>
+
 
 <app-footer></app-footer>

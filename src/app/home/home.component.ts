@@ -10,9 +10,10 @@ import { Router } from '@angular/router';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  constructor(private router: Router) {}
-  irAPagina() {
-    this.router.navigate(['https://ico.org/es/']); // Navega a la página de contacto
+  irAPaginaExterna() {
+    window.open('https://ico.org/es/', '_blank');
+    // '_blank' = abre en una nueva pestaña
+    // si quieres en la misma pestaña usa '_self'
   }
 }
 
