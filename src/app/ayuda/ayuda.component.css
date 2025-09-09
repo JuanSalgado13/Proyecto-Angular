@@ -62,3 +62,12 @@ strong {
   color: #0288d1;
   margin-top: 10px;
 }
+.ayuda-header {
+  background: #6d4c41;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}

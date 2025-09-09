@@ -1,5 +1,9 @@
 <app-nav></app-nav>
+<div class="ayuda-header">
+  <h1>Ayuda y Soporte</h1>
+  <p>Encuentra respuestas a tus preguntas y obtén asistencia.</p>
 
+</div>
 <div class="ayuda-container">
   <h2> Precio del café</h2>
   <button (click)="obtenerPrecioCafe()">Actualizar</button>
@@ -8,7 +12,7 @@
   <div *ngIf="error" class="error">{{ error }}</div>
 
   <div *ngIf="!cargando && precioCafe !== null">
-    <p>Precio actual: <strong>{{ precioCafe | currency:'USD' }}</strong></p>
+    <p>Precio actual: <strong>{{ precioCafe | currency:'COP:' }}</strong></p>
     <p>Última actualización: {{ ultimaActualizacion }}</p>
   </div>
 </div>
