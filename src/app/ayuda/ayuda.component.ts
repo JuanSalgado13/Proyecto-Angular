@@ -1,40 +1,62 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule, CurrencyPipe } from '@angular/common';
+import {
+  HttpClientModule,
+  HttpClient,
+  HttpHeaders,
+} from '@angular/common/http';
 import { NavComponent } from '../shared/component/nav/nav.component';
 import { FooterComponent } from '../shared/component/footer/footer.component';
-import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-ayuda',
-  imports: [NgIf,NavComponent, FooterComponent],
+  standalone: true,
+  imports: [
+    CommonModule,
+    CurrencyPipe,
+    HttpClientModule,
+    NavComponent,
+    FooterComponent,
+  ],
   templateUrl: './ayuda.component.html',
-  styleUrl: './ayuda.component.css',
+  styleUrls: ['./ayuda.component.css'],
 })
 export class AyudaComponent implements OnInit {
   precioCafe: number | null = null;
   ultimaActualizacion: string = '';
+  cargando = false;
+  error: string | null = null;
+
+  constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    // Llamar inmediatamente al cargar
     this.obtenerPrecioCafe();
-
-    // Volver a consultar cada 60 segundos
-    setInterval(() => {
-      this.obtenerPrecioCafe();
-    }, 60000);
+    setInterval(() => this.obtenerPrecioCafe(), 60000);
   }
 
-  async obtenerPrecioCafe() {
-    try {
-      // ⚠️ Este endpoint es de ejemplo, debes reemplazarlo con una API real de café
-      const response = await fetch(
-        'https://es.investing.com/commodities/us-coffee-c'
-      );
-      const data = await response.json();
+  obtenerPrecioCafe(): void {
+    this.cargando = true;
+    this.error = null;
 
-      this.precioCafe = data.price; // depende de cómo venga la respuesta
-      this.ultimaActualizacion = new Date().toLocaleTimeString();
-    } catch (error) {
-      console.error('Error al obtener el precio del café:', error);
-    }
+    const url = 'https://api.api-ninjas.com/v1/commodityprice?name=gold';
+    const headers = new HttpHeaders({
+      'X-Api-Key': 'o7YvGPgggeppMNy3ynHjUQ==3wwi5I4hqOrvrcgj',
+    });
+
+    this.http.get<any>(url, { headers }).subscribe({
+      next: (data) => {
+        this.precioCafe = data?.price ?? null;
+        this.ultimaActualizacion = new Date().toLocaleTimeString();
+        this.cargando = false;
+      },
+      error: (err) => {
+        console.error('API error:', err);
+        this.error =
+          err.status === 401 || err.status === 403
+            ? 'API key inválida o sin autorización'
+            : 'Error al obtener el precio del café';
+        this.cargando = false;
+      },
+    });
   }
 }
