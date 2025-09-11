@@ -11,13 +11,13 @@ import { FooterComponent } from '../shared/component/footer/footer.component';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
-  showModal: boolean = false; // Estado inicial del modal
+  showModal: boolean = false; 
 
   openModal() {
-    this.showModal = true; // Cambia a true → abre el modal
+    this.showModal = true; 
   }
 
   closeModal() {
-    this.showModal = false; // Cambia a false → cierra el modal
+    this.showModal = false; 
   }
 }

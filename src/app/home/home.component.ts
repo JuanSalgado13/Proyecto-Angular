@@ -12,8 +12,7 @@ import { Router } from '@angular/router';
 export class HomeComponent {
   irAPaginaExterna() {
     window.open('https://ico.org/es/', '_blank');
-    // '_blank' = abre en una nueva pestaña
-    // si quieres en la misma pestaña usa '_self'
+ 
   }
 }
 
