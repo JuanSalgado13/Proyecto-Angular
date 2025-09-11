@@ -1,20 +1,82 @@
 <app-nav></app-nav>
-<div class="ayuda-header">
-  <h1>Ayuda y Soporte</h1>
-  <p>Encuentra respuestas a tus preguntas y obtén asistencia.</p>
+<section class="sobre-nosotros">
+  <h2>Sobre Nosotros</h2>
+  <p class="intro">
+    El <strong>Eje Cafetero</strong> es el alma cafetera de Colombia, conformado por 
+    <strong>Quindío, Risaralda, Caldas y Antioquia</strong>, territorios que con orgullo 
+    cultivan el café que ha conquistado al mundo.
+  </p>
 
-</div>
-<div class="ayuda-container">
-  <h2> Precio del café</h2>
-  <button (click)="obtenerPrecioCafe()">Actualizar</button>
+  <div class="grid-container">
+    <div class="columna">
+      <div class="caja-region">
+        <h3>Quindío</h3>
+        <p>
+          Conocido como el corazón del café colombiano, sus granos son suaves y equilibrados, 
+          destacándose los orígenes de <em>Armenia</em> y <em>Salento</em>.
+        </p>
+      </div>
 
-  <div *ngIf="cargando">Cargando...</div>
-  <div *ngIf="error" class="error">{{ error }}</div>
+      <div class="caja-region">
+        <h3>Risaralda</h3>
+        <p>
+          Tierra de montañas que producen cafés de aroma intenso y notas frutales, reconocidos 
+          en certámenes internacionales.
+        </p>
+      </div>
+    </div>
 
-  <div *ngIf="!cargando && precioCafe !== null">
-    <p>Precio actual: <strong>{{ precioCafe | currency:'COP:' }}</strong></p>
-    <p>Última actualización: {{ ultimaActualizacion }}</p>
+    <div class="columna central">
+      <h2> Precio del café</h2>
+      <button (click)="obtenerPrecioCafe()">Actualizar</button>
+
+      <div *ngIf="cargando" class="loading">Cargando...</div>
+      <div *ngIf="error" class="error">{{ error }}</div>
+
+      <div *ngIf="!cargando && precioCafe !== null">
+        <p class="precio">
+          Precio actual: <strong>{{ precioCafe | currency:"COP" }}</strong>
+        </p>
+        <p class="time">Última actualización: {{ ultimaActualizacion }}</p>
+      </div>
+    </div>
+
+    <div class="columna">
+      <div class="caja-region">
+        <h3>Caldas</h3>
+        <p>
+          Con gran tradición cafetera, ofrece cafés dulces y acaramelados, fruto del conocimiento 
+          transmitido por generaciones de caficultores.
+        </p>
+      </div>
+
+      <div class="caja-region">
+        <h3>Antioquia</h3>
+        <p>
+          Cuna de la arriería y del espíritu montañero, produce cafés con cuerpo y carácter, 
+          reflejo auténtico de la cultura paisa.
+        </p>
+      </div>
+    </div>
   </div>
-</div>
+
+  <p class="destacado">
+    <strong>
+      Hablar del Eje Cafetero es hablar de patrimonio cultural y de paisajes que hoy son 
+      Patrimonio de la Humanidad. Cada taza guarda la memoria de nuestros abuelos, la 
+      dedicación de los caficultores y la esencia de una tierra que vive por y para el café.
+    </strong>
+  </p>
+
+  <p class="destacado">
+    <strong>
+      <em>Más que una bebida, el café es emoción, nostalgia y esperanza.</em> En cada cosecha 
+      florece la calidez de nuestras familias, el esfuerzo de nuestras manos campesinas y 
+      el orgullo de compartir con el mundo un pedacito de nuestra tierra, nuestra cultura 
+      y nuestro corazón.
+    </strong>
+  </p>
+</section>
+
 
 <app-footer></app-footer>
