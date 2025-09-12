@@ -9,9 +9,10 @@
 .content {
   display: flex;
   justify-content: space-evenly;
+  background-color: #fbe9e7;
   align-items: center;
   padding: 50px;
-  margin-bottom: 50px;
+  height: 100%;
 }
 .btnPags {
   padding: 20px;

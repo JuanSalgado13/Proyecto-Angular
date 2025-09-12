@@ -20,20 +20,11 @@
 .links {
   margin-right: 20px;
   text-decoration: none;
-  color: black;
+  color:  #5d4037;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 900;
   font-size: 38px;
-  .y{
-    color: yellow;
-     filter: brightness(80%);
-  }
-  .b{
-    color: blue;
-  }
-  .r{
-    color: red;
-  }
+ 
 }
 
 .login {
