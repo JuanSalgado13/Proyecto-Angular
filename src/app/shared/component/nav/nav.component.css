@@ -1,13 +1,25 @@
 .nav {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 45px;  
-  width: 1500px;
-  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 0;
   
+}
+.tittle h1 {
+  padding: 20px;
+  font-family: "cursive",Lucida Handwriting, sans-serif;
+  font-weight: 900;
+  color: #5d4037;
+ 
 }
 .izquierda {
   display: flex;
+  padding: 40px;
+  gap: 50px;
+  
+  
 }
 .derecha {
   bottom: 100px;
@@ -15,23 +27,24 @@
   flex-direction: row-reverse;
   position: relative;
   right: 20px;
- 
+
 }
 .links {
   margin-right: 20px;
   text-decoration: none;
-  color:  #5d4037;
-  font-family: 'Times New Roman', Times, serif;
+  color: #5d4037;
+  font-family: Georgia;
   font-weight: 900;
-  font-size: 38px;
- 
+  font-size: 22px;
 }
 
 .login {
+  border: 2px solid #5d4037;
   text-decoration: none;
   font-size: 15px;
-  color: white;
-  background-color: black;
+  color: #5d4037;
+  background-color: #fbe9e7;
   padding: 10px;
   border-radius: 50px;
+  
 }

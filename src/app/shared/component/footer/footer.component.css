@@ -1,5 +1,5 @@
 .footer {
-  background: black;
+  background: #fbe9e7;
   width: 100%;
   height: 400px;
   display: flex;
@@ -10,11 +10,11 @@
   list-style: none;
 }
 .first {
-    padding: 40px;
+    padding: 10px 40px 40px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #5d4037;
   width: 1000px;
     position: relative;
     left: 450px;
@@ -22,7 +22,7 @@
 li {
   display: inline;
   margin-right: 20px;
-  color: white;
+  color: #5d4037;
   font-family: cursive;
   font-weight: 900;
   font-size: 25px;
