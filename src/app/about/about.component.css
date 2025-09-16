@@ -5,7 +5,7 @@
   gap: 40px;
   padding: 40px;
   overflow-x: auto;
-  height: 100%; 
+  height: 48vh;
 }
 
 .card {
@@ -16,7 +16,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .card img {
@@ -75,4 +75,80 @@
 
 .overlay button:hover {
   background: #388e3c;
+}
+
+
+.tarjetas-container {
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 9.5rem;
+  padding: 2rem 9rem;
+  background: #f8f9fa;
+  justify-items: center;
+}
+
+
+.tarjeta-fruta {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition: transform 0.2s;
+}
+
+.tarjeta-fruta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.tarjeta-fruta img {
+  width: 100%;
+  
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.tarjeta-fruta h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+
+.precio {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.precio.premium {
+  color: #d9534f;
+}
+
+.precio.normal {
+  color: #28a745; 
+}
+
+
+.btn-comprar {
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-comprar:hover {
+  background: linear-gradient(135deg, #66bb6a, #2e7d32);
 }

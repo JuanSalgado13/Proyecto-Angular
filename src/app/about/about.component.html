@@ -37,5 +37,28 @@
   </div>
 </div>
 
+
+<div class="tarjetas-container">
+  @for (fruta of frutas(); track fruta.nombre) {
+    <div class="tarjeta-fruta">
+      <img [src]="fruta.url" [alt]="fruta.nombre">
+      <h3>{{ fruta.nombre }}</h3>
+
+      @if (fruta.precio > 2000) {
+        <div class="precio premium">
+          <span>{{ fruta.precio | currency:'COP':'$' }}</span>
+        </div>
+      } @else {
+        <div class="precio normal">
+          <span>{{ fruta.precio | currency:'COP':'$' }}</span>
+        </div>
+      }
+
+      <button class="btn-comprar" (click)="agregarAlCarrito(fruta)">Añadir al carrito</button>
+    </div>
+  }
+</div>
+
+
 <app-footer></app-footer>
 

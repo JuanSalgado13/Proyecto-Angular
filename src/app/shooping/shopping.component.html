@@ -10,6 +10,17 @@
       siembra manual de granos, las cosechas dos veces al año y celebraciones
       como la Fiesta Nacional del Café.'
     </p>
+    <button (click)="toggleElemento()">Ver mas</button>
+
+@if (mostrarElemento()) {
+  <p class="mensaje exito">
+    ¡Este mensaje se está mostrando porque la condición es verdadera!
+  </p>
+} @else {
+  <p class="mensaje error">
+    
+  </p>
+}
   </div>
 </div>
 <div class=" contain second">

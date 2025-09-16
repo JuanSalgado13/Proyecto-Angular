@@ -1,25 +1,23 @@
 .footer {
   background: #fbe9e7;
   width: 100%;
-  height: 400px;
+  
   display: flex;
   justify-content: center; 
   align-items: center;
 }
-.ul {
-  list-style: none;
-}
+
+
 .first {
-    padding: 10px 40px 40px 40px;
+   
   display: flex;
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid #5d4037;
   width: 1000px;
-    position: relative;
-    left: 450px;
+   
 }
-li {
+h1 {
   display: inline;
   margin-right: 20px;
   color: #5d4037;
@@ -36,14 +34,15 @@ p {
   font-weight: 50;
   font-size: 15px;
 }
-.second {
+.ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 600px;
+  padding: 20px;
+  
 }
 .second p{
     margin: 0;
-    padding:  0 ;
+    padding:  10px ;
     text-align: center;
 }
