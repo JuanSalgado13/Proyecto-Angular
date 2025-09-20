@@ -5,29 +5,33 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  
 }
 .tittle h1 {
   padding: 20px;
-  font-family: "cursive",Lucida Handwriting, sans-serif;
+  font-family: "cursive", Lucida Handwriting, sans-serif;
   font-weight: 900;
   color: #5d4037;
- 
 }
 .izquierda {
   display: flex;
   padding: 40px;
   gap: 50px;
-  
-  
 }
+/* .derecha  p{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  font-size: 15px;
+  color: #5d4037;
+  font-family: "cursive",Lucida Handwriting, sans-serif;
+  font-weight: 900;
+} */
 .derecha {
   bottom: 100px;
   display: flex;
   flex-direction: row-reverse;
   position: relative;
-  right: 20px;
-
+  right: 40px;
 }
 .links {
   margin-right: 20px;
@@ -46,5 +50,24 @@
   background-color: #fbe9e7;
   padding: 10px;
   border-radius: 50px;
-  
+}
+.derecha a {
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  gap: 6px;               
+  text-decoration: none;   
+  color: #5d4037;           
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icono {
+  width: 30px;
+  height: 30px;
+}
+
+.txt {
+  display: inline-block;
 }

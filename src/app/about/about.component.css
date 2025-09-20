@@ -77,78 +77,80 @@
   background: #388e3c;
 }
 
-
-.tarjetas-container {
-  display: grid;
-  
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 9.5rem;
-  padding: 2rem 9rem;
-  background: #f8f9fa;
-  justify-items: center;
-}
-
-
-.tarjeta-fruta {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  width: 320px;
+/* Contenedor general */
+.cafes-container {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1200px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  transition: transform 0.2s;
 }
 
-.tarjeta-fruta:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-
-.tarjeta-fruta img {
-  width: 100%;
-  
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-
-.tarjeta-fruta h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin: 0.5rem 0;
-  color: #333;
-}
-
-
-.precio {
-  margin: 0.5rem 0 1rem;
-  font-size: 1.1rem;
+/* Título dinámico */
+.cafes-container h2 {
+  font-size: 2rem;
+  color: #4a2c2a; /* tono café */
+  margin-bottom: 1.5rem;
   font-weight: bold;
+  border-bottom: 3px solid #b38b59;
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
-.precio.premium {
-  color: #d9534f;
+/* Grid para las tarjetas */
+.cafe-grid {
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-.precio.normal {
-  color: #28a745; 
+/* Tarjeta individual */
+.cafe-card {
+  
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.cafe-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-color: #b38b59;
+}
 
-.btn-comprar {
-  background: linear-gradient(135deg, #4caf50, #388e3c);
-  color: white;
-  border: none;
+/* Imagen del café */
+.cafe-card img {
+  width: 270px;
+  object-fit: cover;
   border-radius: 10px;
-  padding: 0.6rem 1.2rem;
-  font-size: 0.95rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s ease;
+  margin-bottom: 0.8rem;
 }
 
-.btn-comprar:hover {
-  background: linear-gradient(135deg, #66bb6a, #2e7d32);
+/* Nombre del café */
+.cafe-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+/* Precio */
+.cafe-card p {
+  font-size: 1rem;
+  color: #444;
+  font-weight: bold;
+  margin: 0.3rem 0 0.8rem;
+}
+
+/* Región */
+.cafe-card .tipo {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #fff;
+  background: #4a2c2a;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
 }

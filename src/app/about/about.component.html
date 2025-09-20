@@ -1,11 +1,15 @@
 <app-nav></app-nav>
+
+
 <div class="productos">
   <div class="card">
     <img src="assets/images/bolsaQ.jpg" alt="Café Quindío">
     <div class="overlay">
       <h3>Café Quindío</h3>
       <p>Auténtico café de las montañas del Quindío.</p>
-      <button>Comprar</button>
+       <button (click)="verMas('Quindio')" class="btn-vermas">
+      Ver más cafés
+    </button>
     </div>
   </div>
 
@@ -14,7 +18,9 @@
     <div class="overlay">
       <h3>Café Risaralda</h3>
       <p>Café suave con notas dulces y florales.</p>
-      <button>Comprar</button>
+        <button (click)="verMas('Risaralda')" class="btn-vermas">
+      Ver más cafés
+    </button>
     </div>
   </div>
 
@@ -23,7 +29,9 @@
     <div class="overlay">
       <h3>Café Caldas</h3>
       <p>De la tierra del nevado, aroma fuerte y balanceado.</p>
-      <button>Comprar</button>
+        <button (click)="verMas('Caldas')" class="btn-vermas">
+      Ver más cafés
+    </button>
     </div>
   </div>
 
@@ -32,33 +40,24 @@
     <div class="overlay">
       <h3>Café Antioquia</h3>
       <p>Intenso, con cuerpo y sabor único de montaña.</p>
-      <button>Comprar</button>
+       <button (click)="verMas('Antioquia')" class="btn-vermas">
+      Ver más cafés
+    </button>
     </div>
   </div>
 </div>
+<div class="cafes-container" *ngIf="regionSeleccionada">
+  <h2>Cafés de {{ regionSeleccionada }}</h2>
 
-
-<div class="tarjetas-container">
-  @for (fruta of frutas(); track fruta.nombre) {
-    <div class="tarjeta-fruta">
-      <img [src]="fruta.url" [alt]="fruta.nombre">
-      <h3>{{ fruta.nombre }}</h3>
-
-      @if (fruta.precio > 2000) {
-        <div class="precio premium">
-          <span>{{ fruta.precio | currency:'COP':'$' }}</span>
-        </div>
-      } @else {
-        <div class="precio normal">
-          <span>{{ fruta.precio | currency:'COP':'$' }}</span>
-        </div>
-      }
-
-      <button class="btn-comprar" (click)="agregarAlCarrito(fruta)">Añadir al carrito</button>
+  <div class="cafe-grid">
+    <div class="cafe-card" *ngFor="let cafe of cafesFiltrados">
+      <img [src]="cafe.url" [alt]="cafe.nombre" />
+      <h3>{{ cafe.nombre }}</h3>
+      <p>Precio: {{ cafe.precio | currency:'COP':'$' }}</p>
+      <span class="tipo">Región: {{ cafe.region }}</span>
     </div>
-  }
+  </div>
 </div>
-
 
 <app-footer></app-footer>
 

@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  template: `
+    
+    <router-outlet></router-outlet>
+  `,
 })
 export class AppComponent {
-  public readonly tittle = ' abarca una rica historia de más de 180 años, donde la cultura cafeter'
- 
+  title = 'PagJuan';
 }

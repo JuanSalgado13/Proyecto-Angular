@@ -1,0 +1,20 @@
+{
+  "cafes": [
+    {
+      "id": 1,
+      "nombre": "La Morelia",
+      "precio": 2500,
+      "url": "https://inmersso.co/wp-content/uploads/2023/11/CAFE-LA-MORELIA_0003_1-1.jpg",
+      "region": "Quindio",
+      "tipo": "cafe"
+    },
+    {
+      "id": 2,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Quindio",
+      "tipo": "cafe"
+    }
+  ]
+}

@@ -5,19 +5,21 @@ import { FooterComponent } from '../shared/component/footer/footer.component';
 
 
 @Component({
-  imports: [NgIf,NavComponent,FooterComponent],
+  imports: [NgIf, NavComponent, FooterComponent],
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
-  showModal: boolean = false; 
+  
+
+  showModal: boolean = false;
 
   openModal() {
-    this.showModal = true; 
+    this.showModal = true;
   }
 
   closeModal() {
-    this.showModal = false; 
+    this.showModal = false;
   }
 }
