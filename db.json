@@ -15,6 +15,118 @@
       "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
       "region": "Quindio",
       "tipo": "cafe"
+    },
+    {
+      "id": 3,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Quindio",
+      "tipo": "cafe"
+    },
+    {
+      "id": 4,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Quindio",
+      "tipo": "cafe"
+    },
+    {
+      "id": 5,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Risaralda",
+      "tipo": "cafe"
+    },
+    {
+      "id": 6,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Risaralda",
+      "tipo": "cafe"
+    },
+    {
+      "id": 7,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Risaralda",
+      "tipo": "cafe"
+    },
+    {
+      "id": 8,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Risaralda",
+      "tipo": "cafe"
+    },
+    {
+      "id": 9,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Caldas",
+      "tipo": "cafe"
+    },
+    {
+      "id": 10,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Caldas",
+      "tipo": "cafe"
+    },
+    {
+      "id": 11,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Caldas",
+      "tipo": "cafe"
+    },
+    {
+      "id": 12,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Caldas",
+      "tipo": "cafe"
+    },
+    {
+      "id": 13,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Antioquia",
+      "tipo": "cafe"
+    },
+    {
+      "id": 14,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Antioquia",
+      "tipo": "cafe"
+    },
+    {
+      "id": 15,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Antioquia",
+      "tipo": "cafe"
+    },
+    {
+      "id": 16,
+      "nombre": "San Alberto",
+      "precio": 1200,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "region": "Antioquia",
+      "tipo": "cafe"
     }
   ]
 }

@@ -78,17 +78,14 @@
 }
 
 /* Contenedor general */
-.cafes-container {
-  margin: 2rem auto;
-  padding: 1rem;
-  max-width: 1200px;
+/* .cafes-container {
+  padding: 2rem;
   text-align: center;
 }
 
-/* Título dinámico */
 .cafes-container h2 {
   font-size: 2rem;
-  color: #4a2c2a; /* tono café */
+  color: #4a2c2a;
   margin-bottom: 1.5rem;
   font-weight: bold;
   border-bottom: 3px solid #b38b59;
@@ -96,16 +93,14 @@
   padding-bottom: 0.5rem;
 }
 
-/* Grid para las tarjetas */
 .cafe-grid {
-  width: 400px;
+  
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1.5rem;
   margin-top: 1rem;
 }
 
-/* Tarjeta individual */
 .cafe-card {
   
   background: #fff;
@@ -122,7 +117,6 @@
   border-color: #b38b59;
 }
 
-/* Imagen del café */
 .cafe-card img {
   width: 270px;
   object-fit: cover;
@@ -130,14 +124,12 @@
   margin-bottom: 0.8rem;
 }
 
-/* Nombre del café */
 .cafe-card h3 {
   font-size: 1.2rem;
   color: #333;
   margin: 0.5rem 0;
 }
 
-/* Precio */
 .cafe-card p {
   font-size: 1rem;
   color: #444;
@@ -145,7 +137,6 @@
   margin: 0.3rem 0 0.8rem;
 }
 
-/* Región */
 .cafe-card .tipo {
   display: inline-block;
   font-size: 0.9rem;
@@ -153,4 +144,81 @@
   background: #4a2c2a;
   padding: 0.3rem 0.7rem;
   border-radius: 8px;
+} */
+.cafes-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.cafes-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.cafe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.cafe-card {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cafe-card img {
+  width: 245px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cafe-card h3 {
+  margin: 12px 0 6px;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.cafe-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.cafe-card .tipo {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Hover efecto */
+.cafe-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* === Estilos dinámicos con ngClass === */
+
+/* Para cafés de Quindío */
+.premium {
+  border-color: brown !important;
+  background: #fdf5f0;
+}
+
+/* Para cafés de Antioquia */
+.andes {
+  border-color: green !important;
+  background: #f0fdf4;
+}
+
+/* Para cafés especiales (precio > 2000) */
+.especial {
+  border-color: gold !important;
+  background: #fffbe6;
 }

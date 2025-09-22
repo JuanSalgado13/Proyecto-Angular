@@ -1,48 +1,47 @@
 <app-nav></app-nav>
 
-
 <div class="productos">
   <div class="card">
-    <img src="assets/images/bolsaQ.jpg" alt="Café Quindío">
+    <img src="assets/images/bolsaQ.jpg" alt="Café Quindío" />
     <div class="overlay">
       <h3>Café Quindío</h3>
       <p>Auténtico café de las montañas del Quindío.</p>
-       <button (click)="verMas('Quindio')" class="btn-vermas">
-      Ver más cafés
-    </button>
+      <button (click)="verMas('Quindio')" class="btn-vermas">
+        Ver más cafés
+      </button>
     </div>
   </div>
 
   <div class="card">
-    <img src="assets/images/bolsaR.jpg" alt="Café Risaralda">
+    <img src="assets/images/bolsaR.jpg" alt="Café Risaralda" />
     <div class="overlay">
       <h3>Café Risaralda</h3>
       <p>Café suave con notas dulces y florales.</p>
-        <button (click)="verMas('Risaralda')" class="btn-vermas">
-      Ver más cafés
-    </button>
+      <button (click)="verMas('Risaralda')" class="btn-vermas">
+        Ver más cafés
+      </button>
     </div>
   </div>
 
   <div class="card">
-    <img src="assets/images/bolsaC.jpg" alt="Café Caldas">
+    <img src="assets/images/bolsaC.jpg" alt="Café Caldas" />
     <div class="overlay">
       <h3>Café Caldas</h3>
       <p>De la tierra del nevado, aroma fuerte y balanceado.</p>
-        <button (click)="verMas('Caldas')" class="btn-vermas">
-      Ver más cafés
-    </button>
+      <button (click)="verMas('Caldas')" class="btn-vermas">
+        Ver más cafés
+      </button>
     </div>
   </div>
 
   <div class="card">
-    <img src="assets/images/bolsaA.jpg" alt="Café Antioquia">
+    <img src="assets/images/bolsaA.jpg" alt="Café Antioquia" />
     <div class="overlay">
       <h3>Café Antioquia</h3>
       <p>Intenso, con cuerpo y sabor único de montaña.</p>
-       <button (click)="verMas('Antioquia')" class="btn-vermas">
-      Ver más cafés
-    </button>
+      <button (click)="verMas('Antioquia')" class="btn-vermas">
+        Ver más cafés
+      </button>
     </div>
   </div>
 </div>
@@ -50,14 +49,25 @@
   <h2>Cafés de {{ regionSeleccionada }}</h2>
 
   <div class="cafe-grid">
-    <div class="cafe-card" *ngFor="let cafe of cafesFiltrados">
+    <div
+      class="cafe-card"
+      *ngFor="let cafe of cafesFiltrados"
+      [ngClass]="{
+        premium: cafe.region === 'Quindio',
+        andes: cafe.region === 'Antioquia',
+        especial: cafe.precio > 2000
+      }"
+      [ngStyle]="{
+        'border-color': cafe.region === 'Quindio' ? 'brown' : '#ccc',
+        'box-shadow': cafe.precio > 2000 ? '0 4px 12px rgba(0,0,0,0.3)' : 'none'
+      }"
+    >
       <img [src]="cafe.url" [alt]="cafe.nombre" />
       <h3>{{ cafe.nombre }}</h3>
-      <p>Precio: {{ cafe.precio | currency:'COP':'$' }}</p>
+      <p>Precio: {{ cafe.precio | currency : "COP" : "$" }}</p>
       <span class="tipo">Región: {{ cafe.region }}</span>
     </div>
   </div>
 </div>
 
 <app-footer></app-footer>
-
