@@ -1,11 +1,10 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { NavComponent } from '../shared/component/nav/nav.component';
-import { FooterComponent } from '../shared/component/footer/footer.component';
 
 
 @Component({
-  imports: [NgIf, NavComponent, FooterComponent],
+  imports: [NgIf, NavComponent ],
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],

@@ -15,21 +15,21 @@ export interface Producto {
   providedIn: 'root',
 })
 export class CafesService {
-  private apiUrl = 'http://localhost:3000/cafes'; // JSON Server endpoint
+  private apiUrl = 'http://localhost:3000/cafes'; 
 
   constructor(private http: HttpClient) {}
 
-  // Traer todos los cafés
+  
   getAllCafes(): Observable<Producto[]> {
     return this.http.get<Producto[]>(this.apiUrl);
   }
 
-  // Filtrar cafés por región
+  
   getProductosPorRegion(region: string): Observable<Producto[]> {
     return this.http.get<Producto[]>(`${this.apiUrl}?region=${region}`);
   }
 
-  // Buscar café por ID
+  
   getProductoById(id: number): Observable<Producto> {
     return this.http.get<Producto>(`${this.apiUrl}/${id}`);
   }

@@ -53,14 +53,13 @@
       class="cafe-card"
       *ngFor="let cafe of cafesFiltrados"
       [ngClass]="{
-        premium: cafe.region === 'Quindio',
-        andes: cafe.region === 'Antioquia',
-        especial: cafe.precio > 2000
+        premium: cafe.region === 'Quindio' || cafe.region === 'Risaralda' || cafe.region === 'Caldas' || cafe.region === 'Antioquia',
+        especial: cafe.precio > 45000,
+        estandar: cafe.precio <= 45000
       }"
-      [ngStyle]="{
-        'border-color': cafe.region === 'Quindio' ? 'brown' : '#ccc',
-        'box-shadow': cafe.precio > 2000 ? '0 4px 12px rgba(0,0,0,0.3)' : 'none'
-      }"
+      [ngStyle]="getEstilosPorRegion(cafe)"
+    
+  
     >
       <img [src]="cafe.url" [alt]="cafe.nombre" />
       <h3>{{ cafe.nombre }}</h3>

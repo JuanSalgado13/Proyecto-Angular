@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nombre": "La Morelia",
-      "precio": 2500,
+      "precio": 35000,
       "url": "https://inmersso.co/wp-content/uploads/2023/11/CAFE-LA-MORELIA_0003_1-1.jpg",
       "region": "Quindio",
       "tipo": "cafe"
@@ -11,120 +11,120 @@
     {
       "id": 2,
       "nombre": "San Alberto",
-      "precio": 1200,
+      "precio": 20000,
       "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
       "region": "Quindio",
       "tipo": "cafe"
     },
     {
       "id": 3,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "La Finca",
+      "precio": 82000,
+      "url": "https://lafinca.io/cdn/shop/files/QUINDIO_14ca74d7-1be3-4f9b-8d02-d27b6c0bf60e.png?v=1686087310&width=1500",
       "region": "Quindio",
       "tipo": "cafe"
     },
     {
       "id": 4,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "Concorde",
+      "precio": 70000,
+      "url": "https://cafeconcorde.co/wp-content/uploads/2023/07/gesh-scaled.jpg",
       "region": "Quindio",
       "tipo": "cafe"
     },
     {
       "id": 5,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "La Colina",
+      "precio": 65000,
+      "url": "https://cafesdeorigen.net/wp-content/uploads/2024/01/Cafe-la-colina-bourbon-arcoiris.webp",
       "region": "Risaralda",
       "tipo": "cafe"
     },
     {
       "id": 6,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "Cafe ° Coffee",
+      "precio": 40000,
+      "url": "https://elmarketcolombia.com/cdn/shop/files/caferisaralda.jpg?v=1693923355",
       "region": "Risaralda",
       "tipo": "cafe"
     },
     {
       "id": 7,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "Entreverdes",
+      "precio": 30000,
+      "url": "https://www.autor.com.co/wp-content/uploads/2022/12/482801_3.webp",
       "region": "Risaralda",
       "tipo": "cafe"
     },
     {
       "id": 8,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "Kumandy",
+      "precio": 50000,
+      "url": "https://m.media-amazon.com/images/I/81YbELTdN+L.jpg",
       "region": "Risaralda",
       "tipo": "cafe"
     },
     {
       "id": 9,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "Kaldivia",
+      "precio": 120000,
+      "url": "https://kaldiviacafe.com/wp-content/uploads/2023/09/Cafe-De-Caldas-x-500.jpg",
       "region": "Caldas",
       "tipo": "cafe"
     },
     {
       "id": 10,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "Babalu",
+      "precio": 32000,
+      "url": "https://babalu.co/cdn/shop/files/mg_2693_1.jpg?v=1752172779",
       "region": "Caldas",
       "tipo": "cafe"
     },
     {
       "id": 11,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "Cfe Florentino",
+      "precio": 85000,
+      "url": "https://kaiho.com.co/wp-content/uploads/2024/03/SOP-29-2-scaled.jpg",
       "region": "Caldas",
       "tipo": "cafe"
     },
     {
       "id": 12,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "Los Comuneros",
+      "precio": 35000,
+      "url": "https://comprocafedecolombia.com/wp-content//uploads/2021/02/Los-Comuneros.jpg",
       "region": "Caldas",
       "tipo": "cafe"
     },
     {
       "id": 13,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "Villa Carolina",
+      "precio": 43000,
+      "url": "https://cafesdeorigen.net/wp-content/uploads/2025/04/Sin-titulo-e1744238670795.webp",
       "region": "Antioquia",
       "tipo": "cafe"
     },
     {
       "id": 14,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "Aroma Girardino",
+      "precio": 32000,
+      "url": "https://domain.witbox.com.co/171d2a38701faebece521fba63de4007/_thumbs/1438/1457/image00018-zoom.jpeg",
       "region": "Antioquia",
       "tipo": "cafe"
     },
     {
       "id": 15,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "Baggio",
+      "precio": 100000,
+      "url": "https://acdn-us.mitiendanube.com/stores/004/075/897/products/baggiobourbonespressotm250g_v5_c4ebe75e-3f0a-4a71-8263-c74c01cadf88_2048x-d80e0992812e785bc517195999284996-480-0.webp",
       "region": "Antioquia",
       "tipo": "cafe"
     },
     {
       "id": 16,
-      "nombre": "San Alberto",
-      "precio": 1200,
-      "url": "https://comprocafedecolombia.com/wp-content//uploads/2020/11/Mesa-de-trabajo-79-1.jpg",
+      "nombre": "La Herencia",
+      "precio": 152000,
+      "url": "https://cafeslaherencia.com/wp-content/uploads/2023/02/Colombia-arabica-excelso-grano.png",
       "region": "Antioquia",
       "tipo": "cafe"
     }
