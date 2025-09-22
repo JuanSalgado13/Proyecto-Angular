@@ -15,6 +15,7 @@
   left: 350px;
   background-color: #fbe9e7;
 }
+
 .first {
   display: flex;
   align-items: center;
@@ -62,7 +63,7 @@ p {
   line-height: 1.5;
   text-align: justify;
 }
-/* ////////////////////////////////////////////////////////////////////// */
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -101,7 +102,7 @@ p {
 .card p {
   font-size: 16px;
   font-weight: bold;
-  color: #4CAF50;
+  color: #4caf50;
   margin-bottom: 12px;
 }
 
@@ -117,19 +118,4 @@ p {
 
 .card button:hover {
   background: #5d4037;
-}
-.btn-vermas {
-  margin-top: 1rem;
-  padding: 10px 20px;
-  background-color: #6b4226;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.btn-vermas:hover {
-  background-color: #8b5a2b;
 }
